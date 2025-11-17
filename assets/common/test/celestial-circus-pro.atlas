@@ -1,0 +1,195 @@
+celestial-circus-pro.png
+	size: 3729, 1672
+	filter: Linear, Linear
+arm-back-down
+	bounds: 2211, 5, 95, 206
+	rotate: 90
+arm-back-up
+	bounds: 2926, 290, 206, 288
+	offsets: 1, 1, 208, 290
+arm-front-down
+	bounds: 2926, 580, 90, 196
+arm-front-up
+	bounds: 3240, 7, 190, 288
+	offsets: 1, 1, 192, 290
+bench
+	bounds: 935, 452, 471, 117
+	offsets: 1, 1, 473, 119
+body-bottom
+	bounds: 1408, 452, 383, 309
+	offsets: 1, 1, 385, 311
+	rotate: 90
+body-top
+	bounds: 3134, 297, 316, 330
+	offsets: 0, 0, 316, 332
+chest
+	bounds: 2560, 18, 259, 233
+	rotate: 90
+cloud-back
+	bounds: 1087, 40, 502, 410
+	offsets: 1, 1, 504, 412
+cloud-front
+	bounds: 1719, 23, 812, 490
+	rotate: 90
+collar
+	bounds: 29, 440, 116, 63
+	offsets: 1, 1, 118, 65
+	rotate: 90
+ear
+	bounds: 1591, 5, 50, 70
+eye-back-shadow
+	bounds: 1148, 3, 35, 24
+	rotate: 90
+eye-front-shadow
+	bounds: 1087, 2, 59, 36
+eye-reflex-back
+	bounds: 1466, 21, 17, 15
+	offsets: 1, 1, 19, 17
+	rotate: 90
+eye-reflex-front
+	bounds: 1428, 15, 23, 16
+	offsets: 1, 1, 25, 18
+	rotate: 90
+eye-white-back
+	bounds: 1295, 6, 32, 40
+	rotate: 90
+eye-white-front
+	bounds: 1217, 575, 56, 43
+eyelashes-down-back
+	bounds: 533, 440, 26, 12
+	offsets: 1, 1, 28, 14
+eyelashes-down-front
+	bounds: 1174, 3, 35, 13
+	offsets: 1, 1, 37, 15
+	rotate: 90
+eyelashes-top-back
+	bounds: 1381, 14, 45, 24
+eyelashes-top-front
+	bounds: 1643, 34, 74, 41
+face
+	bounds: 2795, 21, 227, 256
+	offsets: 5, 0, 232, 256
+feathers-back
+	bounds: 94, 442, 114, 114
+feathers-front
+	bounds: 1217, 620, 180, 215
+fringe-middle-back
+	bounds: 2926, 778, 83, 130
+fringe-middle-front
+	bounds: 663, 444, 150, 125
+fringe-side-back
+	bounds: 3452, 417, 68, 234
+	rotate: 90
+fringe-side-front
+	bounds: 3452, 349, 66, 232
+	rotate: 90
+glove-bottom-back
+	bounds: 533, 454, 128, 102
+glove-bottom-front
+	bounds: 815, 448, 118, 121
+hair-back-1
+	bounds: 2211, 102, 331, 766
+hair-back-2
+	bounds: 3013, 1248, 200, 712
+	rotate: 90
+hair-back-3
+	bounds: 3013, 850, 174, 670
+	rotate: 90
+hair-back-4
+	bounds: 3024, 629, 219, 656
+	rotate: 90
+hair-back-5
+	bounds: 3013, 1026, 220, 696
+	offsets: 0, 0, 220, 697
+	rotate: 90
+hair-back-6
+	bounds: 3013, 1450, 220, 714
+	offsets: 0, 0, 220, 715
+	rotate: 90
+hair-hat-shadow
+	bounds: 1591, 77, 222, 100
+	offsets: 1, 1, 224, 102
+	rotate: 90
+hand-back
+	bounds: 1591, 301, 149, 117
+	rotate: 90
+hand-front
+	bounds: 3432, 57, 133, 150
+hat-back
+	bounds: 210, 444, 159, 112
+hat-front
+	bounds: 3452, 487, 241, 140
+head-back
+	bounds: 3024, 35, 253, 214
+	offsets: 1, 1, 255, 216
+	rotate: 90
+jabot
+	bounds: 3452, 209, 176, 138
+leg-back
+	bounds: 1217, 837, 524, 833
+leg-front
+	bounds: 1743, 870, 646, 800
+logo-brooch
+	bounds: 1335, 578, 40, 62
+	rotate: 90
+mouth
+	bounds: 1446, 2, 54, 14
+	offsets: 1, 1, 56, 16
+neck
+	bounds: 2419, 5, 95, 139
+	offsets: 1, 1, 97, 141
+	rotate: 90
+nose
+	bounds: 1483, 21, 15, 17
+nose-highlight
+	bounds: 371, 440, 10, 11
+	rotate: 90
+nose-shadow
+	bounds: 1446, 18, 18, 20
+pupil-back
+	bounds: 1189, 4, 23, 34
+	offsets: 1, 1, 25, 36
+pupil-front
+	bounds: 1337, 10, 28, 42
+	offsets: 1, 1, 30, 44
+	rotate: 90
+rope-back
+	bounds: 2, 440, 25, 1230
+rope-front
+	bounds: 2, 440, 25, 1230
+rope-front-bottom
+	bounds: 371, 452, 104, 160
+	offsets: 1, 1, 106, 162
+	rotate: 90
+skirt
+	bounds: 600, 571, 1099, 615
+	offsets: 0, 0, 1099, 616
+	rotate: 90
+sock-bow
+	bounds: 3630, 267, 83, 80
+spine-logo-body
+	bounds: 1214, 6, 32, 79
+	rotate: 90
+star-big
+	bounds: 1275, 576, 42, 58
+	offsets: 1, 1, 44, 60
+	rotate: 90
+star-medium
+	bounds: 561, 440, 12, 18
+	offsets: 1, 1, 14, 20
+	rotate: 90
+star-small
+	bounds: 2, 2, 6, 9
+	offsets: 1, 1, 8, 11
+	rotate: 90
+underskirt
+	bounds: 29, 558, 1112, 569
+	offsets: 0, 0, 1112, 570
+	rotate: 90
+underskirt-back
+	bounds: 2, 10, 1083, 428
+wing-back
+	bounds: 2560, 279, 364, 629
+wing-front
+	bounds: 2391, 910, 760, 620
+	rotate: 90

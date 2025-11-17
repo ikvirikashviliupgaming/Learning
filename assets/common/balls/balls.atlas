@@ -1,0 +1,6 @@
+balls.png
+	size: 215, 209
+	filter: Linear, Linear
+	pma: true
+Group 1
+	bounds: 2, 2, 211, 205
