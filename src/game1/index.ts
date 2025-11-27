@@ -7,6 +7,7 @@ import { Graphics } from "pixi.js";
 import { Text } from "pixi.js";
 import Person from "./models/person";
 import Head from "./models/head";
+import { ErrorCodes } from "./error-codes.enum";
 
 const p = new Person();
 p.name = "asdasdas";
@@ -111,6 +112,54 @@ async function main() {
   // g.stroke({ color: 0x0000ff, width: 2 });
   // container.addChild(g);
   // g.position.set(100, 100);
+
+
+  const array: Product[] = [
+    { name: 'bread', expire: 12, x: new X(13) },
+    { name: 'cheese', expire: 3, x: new X(9) }
+  ];
+
+
+  console.log(array[0].x.temperature + 10)
+  console.warn(getRand(getRand(1, 10)[0], getRand(100, 200)[0]))
+
+  let userRecord: [string, number[], boolean] = ["Chris", [30], true];
+
+
+  // if (resp.code == ErrorCodes.SUCCESS) {
+  //   ajkdads
+  // }
+
+  const x:number = 3;
+  switch (x) {
+    case ErrorCodes.SUCCESS:
+
+      break;
+    case ErrorCodes.PAGE_NOT_FOUNT:
+
+      break;
+    case ErrorCodes.SJDAIJDIASD:
+
+      break;
+
+    default:
+      break;
+  }
+}
+
+// ra ar unda gavaketot
+function getRand(min: number, max: number): [number, { from: number, to: number }] {
+  return [Math.random() * (max - min) + min, { from: min, to: max }]
+
+  0.45 * (10 - 1) + 1
+
+  // return [5, { name: 'bread', expire: 12, x: new X(13) }]
+}
+
+interface Product { name: string, expire: number, x: X }
+class X {
+  public temperature: string;
+  constructor(public price: number) { }
 }
 
 main().catch(console.error);
