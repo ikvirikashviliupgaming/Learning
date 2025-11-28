@@ -7,7 +7,8 @@ import { Graphics } from "pixi.js";
 import { Text } from "pixi.js";
 import Person from "./models/person";
 import Head from "./models/head";
-import { ErrorCodes } from "./error-codes.enum";
+import { ErrorCodesEnums } from "./enums/error-codes.enum";
+import gsap from "gsap";
 
 const p = new Person();
 p.name = "asdasdas";
@@ -113,53 +114,127 @@ async function main() {
   // container.addChild(g);
   // g.position.set(100, 100);
 
-
   const array: Product[] = [
-    { name: 'bread', expire: 12, x: new X(13) },
-    { name: 'cheese', expire: 3, x: new X(9) }
+    { name: "bread", expire: 12, x: new X(13) },
+    { name: "cheese", expire: 3, x: new X(9) },
   ];
 
+  console.error(
+    "enum: ",
+    ErrorCodesEnums.SUCCESS,
+    ErrorCodesEnums.PAGE_NOT_FOUND,
+    ErrorCodesEnums.TEST_3
+  );
 
-  console.log(array[0].x.temperature + 10)
-  console.warn(getRand(getRand(1, 10)[0], getRand(100, 200)[0]))
+  console.log(array[0].x.temperature + 10);
+  console.warn(getRand(getRand(1, 10)[0], getRand(100, 200)[0]));
 
   let userRecord: [string, number[], boolean] = ["Chris", [30], true];
-
 
   // if (resp.code == ErrorCodes.SUCCESS) {
   //   ajkdads
   // }
 
-  const x:number = 3;
+  const x: number = 0;
+
   switch (x) {
-    case ErrorCodes.SUCCESS:
-
+    case ErrorCodesEnums.SUCCESS:
+      console.error("success");
       break;
-    case ErrorCodes.PAGE_NOT_FOUNT:
-
-      break;
-    case ErrorCodes.SJDAIJDIASD:
-
+    case ErrorCodesEnums.PAGE_NOT_FOUND:
+      console.log("some response found");
       break;
 
     default:
+      console.error("default");
       break;
   }
+
+  // console.log(
+  //   sum(5, 10, 2, (sum: number) => {
+  //     console.error("sum from arrow function: ", sum);
+  //   })
+  // );
+  let i = 0;
+
+  for (let i = 0; i < 5; i++) {
+    console.log(i);
+
+    for (let i = 0; i < 2; i++) {
+      console.log(i);
+    }
+  }
+
+  gsap.to(myContainer, 2, {
+    x: 19,
+    onComplete: () => {},
+  });
+
+  sendReq((response: any) => {
+    // document.getElementById("name").textContent = response.name;
+  });
+}
+function sendReq(callback: any): void {
+  setTimeout(() => {
+    if (callback) callback();
+  }, 3000);
+}
+
+function callback(sum: number): void {
+  console.error("from callback method sum = ", sum);
+}
+function sum(x: number, y: number, delay: number, callback: any): number {
+  const sum: number = x + y;
+
+  setTimeout(() => {
+    if (callback) {
+      callback(sum);
+    }
+  }, delay * 1000);
+
+  return sum;
+}
+
+type ID = number | string;
+function printID(id: ID) {
+  console.log(`ID is: ${id}`);
 }
 
 // ra ar unda gavaketot
-function getRand(min: number, max: number): [number, { from: number, to: number }] {
-  return [Math.random() * (max - min) + min, { from: min, to: max }]
+function getRand(
+  min: number,
+  max: number
+): [number, { from: number; to: number }] {
+  return [Math.random() * (max - min) + min, { from: min, to: max }];
 
-  0.45 * (10 - 1) + 1
+  0.45 * (10 - 1) + 1;
 
   // return [5, { name: 'bread', expire: 12, x: new X(13) }]
 }
 
-interface Product { name: string, expire: number, x: X }
+interface Product {
+  name: string;
+  expire: number;
+  x: X;
+}
 class X {
   public temperature: string;
-  constructor(public price: number) { }
+  constructor(public price: number) {}
 }
 
 main().catch(console.error);
+
+// Intersection Type: A type that has ALL properties of both interfaces
+interface HasName {
+  name: string;
+}
+interface HasAge {
+  age: number;
+}
+// CombinedProfile must have both 'name' (string) and 'age' (number)
+type CombinedProfile = HasName & HasAge;
+const person: CombinedProfile = {
+  name: "Jane Doe",
+  age: 45,
+  // If we miss 'age' or 'name', it will be a compiler error
+};
