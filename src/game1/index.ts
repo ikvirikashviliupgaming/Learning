@@ -7,13 +7,16 @@ import { Graphics } from "pixi.js";
 import { Text } from "pixi.js";
 import Person from "./models/person";
 import Head from "./models/head";
-import { ErrorCodesEnums } from "./enums/error-codes.enum";
+import TS, { ErrorCodesEnums, TS_Child } from "./enums/error-codes.enum";
 import gsap from "gsap";
 
 const p = new Person();
 p.name = "asdasdas";
 p.personalNumber = 90;
 p.logMyHairColor();
+
+const ts = new TS();
+const tsChild = new TS_Child();
 
 const head = new Head();
 
